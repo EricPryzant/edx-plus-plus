@@ -1,0 +1,26 @@
+{
+    "name": "edX++",
+    "version": "1.0",
+    "description": "Adds new features to edX Online Learning Platform",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://courses.edx.org/xblock/*"
+            ],
+            "js": ["content.js"],
+            "all_frames": true
+        }
+    ],
+    "manifest_version": 2,
+    "icons": {
+        "16": "floppy-disk16.png",
+        "24": "floppy-disk24.png",
+        "32": "floppy-disk32.png",
+        "64": "floppy-disk64.png",
+        "128": "floppy-disk128.png",
+        "512": "floppy-disk512.png"
+    },
+    "permissions": [
+        "https://courses.edx.org/xblock/*"
+    ]
+}
