@@ -18,6 +18,9 @@ This script adds the following features to the edX lecture video player:
 1. Click "Add to Chrome"
 1. Viola!
 
+
+
+
 ### Legacy Tampermonkey Script
 I will continue to maintain the legacy tampermonkey script for those who don't want to install a chrome extension. The instructions remain the same as before:
 
