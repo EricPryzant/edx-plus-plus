@@ -14,7 +14,7 @@ This script adds the following features to the edX lecture video player:
 
 ## Installation
 
-1. Open the [Chrome Web Store link https://chrome.google.com/webstore/detail/edx++](https://chrome.google.com/webstore/detail/edx%2B%2B/pdnbnbhhjagfdmcoedkgmneagicpmidp/related?hl=en)
+1. Open the [Chrome Web Store link](https://chrome.google.com/webstore/detail/edx%2B%2B/pdnbnbhhjagfdmcoedkgmneagicpmidp/related?hl=en) https://chrome.google.com/webstore/detail/edx%2B%2B/pdnbnbhhjagfdmcoedkgmneagicpmidp/related?hl=en
 1. Click "Add to Chrome"
 1. Viola!
 
@@ -25,8 +25,8 @@ This script adds the following features to the edX lecture video player:
 I will continue to maintain the legacy tampermonkey script for those who don't want to install a chrome extension. The instructions remain the same as before:
 
 1. Install [Tampermonkey](https://tampermonkey.net/)
-1. (Easiest) [Click here to view the source file edX Super Speed.user.js](https://github.com/EricPryzant/edX-Super-Speed/raw/master/edX%20Super%20Speed.user.js) Tampermonkey should automatically recognize the userscript and give you the option to install it.
-1. Alternatively, copy the source code from [edX Super Speed.user.js](https://github.com/EricPryzant/edX-Super-Speed/blob/master/edX%20Super%20Speed.user.js)
+1. (Easiest) [Click here to view the source file edX Super Speed.user.js](https://github.com/EricPryzant/edx-plus-plus/raw/main/Userscript/edX-plus-plus.user.js) Tampermonkey should automatically recognize the userscript and give you the option to install it.
+1. Alternatively, copy the source code from [edX Super Speed.user.js](https://github.com/EricPryzant/edx-plus-plus/blob/main/Userscript/edX-plus-plus.user.js)
 1. Open Tampermonkey in your browser and click the Add Script tab (icon with a plus symbol)
 1. Paste the source into the script window and hit save
 1. Viola!
