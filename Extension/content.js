@@ -82,7 +82,7 @@
                 document.getElementsByClassName("current")[0].nextElementSibling.children[0].click()
                 event.preventDefault();
             } else {
-                document.getElementsByClassName("current")[0].nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSiblingchildren[0].click()
+                document.getElementsByClassName("current")[0].nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].click()
                 event.preventDefault();
             }
         }
