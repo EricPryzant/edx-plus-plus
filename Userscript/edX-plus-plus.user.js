@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         edX++
 // @namespace    http://ericpryzant.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Try to take over the world!
 // @author       Eric Pryzant
 // @match        https://courses.edx.org/xblock/*
