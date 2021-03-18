@@ -1,6 +1,6 @@
 {
     "name": "edX++",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Adds new features to edX Online Learning Platform",
     "content_scripts": [
         {

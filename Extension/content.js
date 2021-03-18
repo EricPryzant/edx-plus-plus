@@ -37,6 +37,18 @@
     item = document.getElementsByClassName("video-speeds")[0];
     new_speed = document.createElement("li");
     btn = document.createElement("button");
+    speed_limit = "3.5";
+    btn.setAttribute("class", "control speed-option");
+    btn.setAttribute("tabindex", -1);
+    btn.setAttribute("aria-pressed", "false");
+    new_speed.appendChild(btn);
+    new_speed.setAttribute("data-speed", speed_limit);
+    new_speed.children[0].innerText = speed_limit + "x";
+    item.prepend(new_speed);
+
+    item = document.getElementsByClassName("video-speeds")[0];
+    new_speed = document.createElement("li");
+    btn = document.createElement("button");
     speed_limit = "4.0";
     btn.setAttribute("class", "control speed-option");
     btn.setAttribute("tabindex", -1);
