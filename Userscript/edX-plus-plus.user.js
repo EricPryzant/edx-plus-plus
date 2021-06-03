@@ -16,6 +16,7 @@
     var vid_url = vid.attributes['data-metadata'].value.toString().match("https://edx-video.net/[\\w\-\.]+.mp4");
     var vid_title = vid.previousElementSibling.innerText;
     var zNode = document.createElement ('div');
+    
     if(vid_url.length === 1) {
         if(vid_title.toLowerCase() === "video"){
             vid_title = "Lecture Video"
@@ -37,6 +38,7 @@
             })
         }
     }
+    
     zNode.setAttribute ('id', 'myContainer');
     zNode.style = "top:0;right:0;position:absolute;z-index:99999;padding:20px;";
     document.body.appendChild (zNode);
