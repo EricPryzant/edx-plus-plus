@@ -12,10 +12,30 @@
 (function() {
     'use strict';
     var vid = document.getElementsByClassName("video")[0];
-    var vid_url = vid.attributes['data-metadata'].value.toString().match("https://edx-video.net/[\\w\-\.]+.mp4")[0];
+    var vid_url = vid.attributes['data-metadata'].value.toString().match("https://edx-video.net/[\\w\-\.]+.mp4");
     var vid_title = vid.previousElementSibling.innerText;
     var zNode = document.createElement ('div');
-    zNode.innerHTML = '<button id="myButton" type="button"><a href=' + vid_url + '>Download ' + vid_title + ' lecture video</a></button>';
+    if(vid_url.length === 1) {
+        if(vid_title.toLowerCase() === "video"){
+            vid_title = "Lecture Video"
+        } else {
+            vid_title += " Lecture Video"
+        }
+        zNode.innerHTML = '<a href=' + vid_url[0] + '><button id="myButton" type="button">Download ' + vid_title + '</button></a>';
+    } else {
+        var buttonText = ""
+        vid_url.forEach(function(item, idx) {
+            buttonText += '<a href=' + item + '><button id="myButton" type="button" style="margin: 5px; min-width: 250px">Download Video ' + (idx+1) + '</button></a>'
+        })
+        zNode.innerHTML = '<button id="myButton" type="button">Download Lecture Videos</button>'
+        zNode.onclick = function () {
+            swal.fire({
+                title: "Multiple Videos Detected",
+                icon: "info",
+                html: buttonText
+            })
+        }
+    }
     zNode.setAttribute ('id', 'myContainer');
     zNode.style = "top:0;right:0;position:absolute;z-index:99999;padding:20px;";
     document.body.appendChild (zNode);
